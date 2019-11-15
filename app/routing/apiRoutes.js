@@ -1,7 +1,14 @@
-app.get('/api/friends', function (request, response) {
-    response.sendFile(path.join(__dirname, "./app/data/friends.js"));
-});
+const path = require(`path`);
 
-app.post('/api/friends', function (request, response) {
-    response.send('Hello World')
-});
+module.exports = function (app) {
+
+
+    app.get('/api/friends', function (request, response) {
+        response.sendFile(path.join(__dirname, "../data/friends.js"));
+    });
+    
+    app.post('/api/friends', function (request, response) {
+        response.send('Hello World')
+    });
+
+}
