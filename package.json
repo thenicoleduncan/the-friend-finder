@@ -4,7 +4,7 @@
   "description": "kind of like a dating site, but you find friends instead",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7"
   },
   "devDependencies": {},
